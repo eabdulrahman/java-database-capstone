@@ -23,6 +23,13 @@
 - STATUS: INT (0 = Scheduled, 1 = Completed, 2 = Cancelled)
 - PRESCRIPTION_ID: INT
 
+## Administrators table
+- ID: INT, PK, UNIQUE, NOT NULL, AUTO_INC
+- NAME: CHAR, NOT NULL,
+- PASSWORD: INT, NOT_NULL,
+- ACCOUNT_STATUS: INT (0 = disabled, 1 = enabled).
+- PASSWORD_EXPIRY: DATETIME
+
 The prescription_id will be linked to the id of a document stored in MongoDB.
 
 ## MongoDB Collection Design
