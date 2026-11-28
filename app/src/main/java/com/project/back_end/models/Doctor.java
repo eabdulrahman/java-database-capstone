@@ -95,6 +95,9 @@ private List<String> availableTimes;
 // 8. Getters and Setters:
 //    - Standard getter and setter methods are provided for all fields: id, name, specialty, email, password, phone, and availableTimes.
 
+// Doctor's specialty
+private String specialty;
+
 public Long getId() {
     return id;
 }
@@ -149,6 +152,14 @@ public List<String> getAvailableTimes() {
 
 public void setAvailableTimes(List<String> availableTimes) {
     this.availableTimes = availableTimes;
+}
+
+public String getSpecialty() {
+    return specialty;
+}
+
+public void setSpecialty(String specialty) {
+    this.specialty = specialty;
 }
 
 }
